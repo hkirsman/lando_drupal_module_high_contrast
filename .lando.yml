@@ -1,0 +1,14 @@
+name: d7-high-contrast
+recipe: drupal7
+config:
+  webroot: web
+  php: '7.2'
+  database: mysql:5.6
+services:
+  appserver:
+    xdebug: true
+tooling:
+  drush:
+    service: appserver
+    cmd:
+      - "drush --root=/app/web/"
