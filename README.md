@@ -1,6 +1,6 @@
 # Installation
 
-This is Lando setup for the Drupal 8 High Contrast module https://www.drupal.org/project/high_contrast
+This is Lando setup for the Drupal 7 High Contrast module https://www.drupal.org/project/high_contrast
 It's meant mainly for developers to get started fast. In short you need Lando
 https://docs.devwithlando.io/installation/installing.html and follow these steps in bash:
 
