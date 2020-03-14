@@ -1,0 +1,25 @@
+uuid: b358a7aa-4e25-453b-bb11-cccfaf21622a
+langcode: en
+status: true
+dependencies:
+  module:
+    - high_contrast
+  theme:
+    - bartik
+id: highcontrast
+theme: bartik
+region: breadcrumb
+weight: 0
+provider: null
+plugin: high_contrast
+settings:
+  id: high_contrast
+  label: 'High contrast'
+  provider: high_contrast
+  label_display: visible
+  switcher_widget: links
+  high_label: Enable
+  normal_label: Disable
+  use_ajax: 0
+  toggle_element: 0
+visibility: {  }

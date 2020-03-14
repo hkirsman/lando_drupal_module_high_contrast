@@ -24,3 +24,6 @@
 /.env
 .editorconfig
 .gitattributes
+
+# Ignore lock file
+composer.lock
