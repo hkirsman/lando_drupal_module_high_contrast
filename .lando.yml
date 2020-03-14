@@ -1,14 +1,12 @@
-name: d7-high-contrast
-recipe: drupal7
+name: d8-high-contrast
+recipe: drupal8
 config:
   webroot: web
-  php: '7.2'
-  database: mysql:5.6
-services:
-  appserver:
-    xdebug: true
+  php: '7.3'
+  database: mysql:5.7
+  xdebug: false
 tooling:
   drush:
     service: appserver
     cmd:
-      - "drush --root=/app/web/"
+      - "drush --uri=http://d8-high-contrast.lndo.site"
