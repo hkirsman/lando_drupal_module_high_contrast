@@ -1,0 +1,32 @@
+parameters:
+  run_on: ['web/modules/contrib/high_contrast']
+  stop_on_failure: false
+  ascii:
+    failed: ~
+    succeeded: ~
+  tasks:
+    php_compatibility:
+      run_on: "%run_on%"
+    check_file_permissions:
+      run_on: "%run_on%"
+    php_check_syntax:
+      run_on: "%run_on%"
+    phpcs:
+      run_on: "%run_on%"
+    phpstan_check_deprecation:
+      run_on: "%run_on%"
+    ecs:
+      run_on: "%run_on%"
+    yaml_lint:
+      run_on: "%run_on%"
+    json_lint:
+      run_on: "%run_on%"
+  extensions:
+    - Wunderio\GrumPHP\Task\PhpCompatibility\PhpCompatibilityExtensionLoader
+    - Wunderio\GrumPHP\Task\PhpCheckSyntax\PhpCheckSyntaxExtensionLoader
+    - Wunderio\GrumPHP\Task\CheckFilePermissions\CheckFilePermissionsExtensionLoader
+    - Wunderio\GrumPHP\Task\Ecs\EcsExtensionLoader
+    - Wunderio\GrumPHP\Task\Phpcs\PhpcsExtensionLoader
+    - Wunderio\GrumPHP\Task\PhpstanCheckDeprecation\PhpstanCheckDeprecationExtensionLoader
+    - Wunderio\GrumPHP\Task\YamlLint\YamlLintExtensionLoader
+    - Wunderio\GrumPHP\Task\JsonLint\JsonLintExtensionLoader

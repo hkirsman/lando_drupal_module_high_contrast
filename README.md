@@ -21,3 +21,10 @@ site are both "admin" but "lando drush uli" will also give the login url.
 When using Lando, you can easily enable/disable Xdebug by using these commands:
  - lando xdebug-on
  - lando xdebug-off
+
+# Coding standards
+
+We've added static code analyzer https://github.com/wunderio/code-quality tool
+to this project. To execute it, run this in bash:
+
+    lando grumphp run
