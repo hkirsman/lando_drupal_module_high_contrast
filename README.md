@@ -12,4 +12,12 @@ https://docs.lando.dev/basics/installation.html and follow these steps in bash:
     lando drush si minimal --existing-config --account-name=admin --account-pass=admin -y
     lando drush uli
 
-Use one of the urls from "lando start" command. Username and password for the site are both "admin".
+Use one of the urls from "lando start" command. Username and password for the
+site are both "admin" but "lando drush uli" will also give the login url.
+
+
+# Xdebug
+
+When using Lando, you can easily enable/disable Xdebug by using these commands:
+ - lando xdebug-on
+ - lando xdebug-off
