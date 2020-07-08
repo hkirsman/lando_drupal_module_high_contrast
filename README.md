@@ -9,6 +9,7 @@ https://docs.devwithlando.io/installation/installing.html and follow these steps
     lando composer install
     lando start
     lando drush site-install --account-name=admin --account-pass=admin -y
+    lando drush en high_contrast -y
 
 Use one of the urls from "lando start" command. Username and password for the site are both "admin".
 
