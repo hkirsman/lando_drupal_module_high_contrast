@@ -14,6 +14,7 @@ parameters:
       run_on: "%run_on%"
     phpcs:
       run_on: "%run_on%"
+      extensions: ['php', 'inc', 'module', 'install', 'theme', 'js']
 #    phpstan_check_deprecation:
 #      run_on: "%run_on%"
     ecs:
