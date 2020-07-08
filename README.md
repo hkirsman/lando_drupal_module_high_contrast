@@ -11,3 +11,10 @@ https://docs.devwithlando.io/installation/installing.html and follow these steps
     lando drush site-install --account-name=admin --account-pass=admin -y
 
 Use one of the urls from "lando start" command. Username and password for the site are both "admin".
+
+# Coding standards
+
+We've added static code analyzer https://github.com/wunderio/code-quality tool
+to this project. To execute it, run this in bash:
+
+    lando grumphp run

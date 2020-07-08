@@ -2,16 +2,21 @@ name: d7-high-contrast
 recipe: drupal7
 config:
   webroot: web
+  # When updating, also update grumphp.yml.
   php: '7.2'
   database: mysql:5.7
 services:
   appserver:
-    xdebug: true
+    xdebug: false
 tooling:
   drush:
     service: appserver
     cmd:
       - "drush --root=/app/web/"
+  grumphp:
+    description: Runs grumphp commands
+    cmd:
+      - appserver: cd /app && ./vendor/bin/grumphp
 
 # Recommended Lando version.
 version: v3.0.7

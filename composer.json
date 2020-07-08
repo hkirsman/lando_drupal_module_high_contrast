@@ -33,7 +33,7 @@
         "drupal/high_contrast": "1.3",
         "drush/drush": "~8.0",
         "symfony/filesystem": "~2.7|^3",
-        "webflo/drupal-finder": "^1.0.0"
+        "webflo/drupal-finder": "^1"
     },
     "conflict": {
         "drupal/core": "8.*"
@@ -93,5 +93,8 @@
             "web/sites/all/translations",
             "web/sites/default"
         ]
+    },
+    "require-dev": {
+        "wunderio/code-quality": "1.0.8"
     }
 }
