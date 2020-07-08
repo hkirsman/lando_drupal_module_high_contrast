@@ -79,7 +79,7 @@
                 "Call the preserve paths hooks" : "https://github.com/SebCorbin/composer-patches/commit/1cb9bacba51f8bba0c5f3f322c3bb61e4ceae974.patch"
             },
             "drupal/drupal": {
-                "Add inclusion of a settings.local.php file in settings.php" :"https://www.drupal.org/files/issues/drupal-7.53-1118520.patch"
+                "Add inclusion of a settings.local.php file in settings.php": "https://www.drupal.org/files/issues/2019-02-22/drupal-7.64-1118520.patch"
             }
         },
         "preserve-paths": [

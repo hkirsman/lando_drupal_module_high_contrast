@@ -647,18 +647,18 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
 # $conf['allow_css_double_underscores'] = TRUE;
 
 /**
- * Load local development override configuration, if available.
+ * The default list of directories that will be ignored by Drupal's file API.
  *
- * Use settings.local.php to override variables on secondary (staging,
- * development, etc) installations of this site. Typically used to disable
- * caching, JavaScript/CSS compression, re-routing of outgoing emails, and
- * other things that should not happen on development and testing sites.
+ * By default ignore node_modules and bower_components folders to avoid issues
+ * with common frontend tools and recursive scanning of directories looking for
+ * extensions.
  *
- * Keep this code block at the end of this file to take full effect.
+ * @see file_scan_directory()
  */
-# if (file_exists(DRUPAL_ROOT . '/' . $conf_path . '/settings.local.php')) {
-#   include DRUPAL_ROOT . '/' . $conf_path . '/settings.local.php';
-# }
+$conf['file_scan_ignore_directories'] = array(
+  'node_modules',
+  'bower_components',
+);
 
 /**
  * Load local development override configuration, if available.
