@@ -12,7 +12,7 @@ tooling:
   drush:
     service: appserver
     cmd:
-      - "drush --root=/app/web/"
+      - "drush --root=/app/web/ --uri=http://d7-high-contrast.lndo.site/"
   xdebug-on:
     service: appserver
     description: Enable xdebug for apache.
