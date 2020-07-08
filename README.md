@@ -12,6 +12,12 @@ https://docs.devwithlando.io/installation/installing.html and follow these steps
 
 Use one of the urls from "lando start" command. Username and password for the site are both "admin".
 
+# Xdebug
+
+When using Lando, you can easily enable/disable Xdebug by using these commands:
+ - lando xdebug-on
+ - lando xdebug-off
+
 # Coding standards
 
 We've added static code analyzer https://github.com/wunderio/code-quality tool
