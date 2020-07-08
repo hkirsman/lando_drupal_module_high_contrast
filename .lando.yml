@@ -3,7 +3,7 @@ recipe: drupal7
 config:
   webroot: web
   php: '7.2'
-  database: mysql:5.6
+  database: mysql:5.7
 services:
   appserver:
     xdebug: true
@@ -12,3 +12,6 @@ tooling:
     service: appserver
     cmd:
       - "drush --root=/app/web/"
+
+# Recommended Lando version.
+version: v3.0.7
