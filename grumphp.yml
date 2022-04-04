@@ -1,7 +1,7 @@
 parameters:
   run_on: ['web/modules/contrib/high_contrast']
 grumphp:
-  stop_on_failure: true
+  stop_on_failure: false
   process_timeout: 300
   ascii:
     failed: ~
