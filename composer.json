@@ -20,8 +20,8 @@
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
         "drupal/console": "^1.0.2",
-        "drupal/core": "^8.8.0",
-        "drupal/core-composer-scaffold": "^8.8.0",
+        "drupal/core": "^9.3",
+        "drupal/core-composer-scaffold": "^9.3",
         "drupal/high_contrast": "1.x-dev",
         "drush/drush": "^9.7.1 | ^10.0.0",
         "vlucas/phpdotenv": "^4.0",
@@ -29,8 +29,8 @@
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
-        "drupal/core-dev": "^8.8.0",
-        "wunderio/code-quality": "^1.0"
+        "drupal/core-dev": "^9.3",
+        "wunderio/code-quality": "^2.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -38,7 +38,16 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "drupal/console-extend-plugin": true,
+            "phpro/grumphp": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "zaporylie/composer-drupal-optimizations": true
+        }
     },
     "autoload": {
         "classmap": [

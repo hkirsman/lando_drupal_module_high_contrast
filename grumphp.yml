@@ -1,6 +1,8 @@
 parameters:
   run_on: ['web/modules/contrib/high_contrast']
-  stop_on_failure: false
+grumphp:
+  stop_on_failure: true
+  process_timeout: 300
   ascii:
     failed: ~
     succeeded: ~
@@ -13,13 +15,13 @@ parameters:
       run_on: "%run_on%"
     phpcs:
       run_on: "%run_on%"
-    phpstan_check_deprecation:
-      run_on: "%run_on%"
-    ecs:
+    php_stan:
       run_on: "%run_on%"
     yaml_lint:
       run_on: "%run_on%"
     json_lint:
+      run_on: "%run_on%"
+    psalm:
       run_on: "%run_on%"
   extensions:
     - Wunderio\GrumPHP\Task\PhpCompatibility\PhpCompatibilityExtensionLoader
@@ -27,6 +29,7 @@ parameters:
     - Wunderio\GrumPHP\Task\CheckFilePermissions\CheckFilePermissionsExtensionLoader
     - Wunderio\GrumPHP\Task\Ecs\EcsExtensionLoader
     - Wunderio\GrumPHP\Task\Phpcs\PhpcsExtensionLoader
-    - Wunderio\GrumPHP\Task\PhpstanCheckDeprecation\PhpstanCheckDeprecationExtensionLoader
+    - Wunderio\GrumPHP\Task\PhpStan\PhpStanExtensionLoader
     - Wunderio\GrumPHP\Task\YamlLint\YamlLintExtensionLoader
     - Wunderio\GrumPHP\Task\JsonLint\JsonLintExtensionLoader
+    - Wunderio\GrumPHP\Task\Psalm\PsalmExtensionLoader

@@ -21,9 +21,9 @@ tooling:
     cmd: "rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && service apache2 reload"
     user: root
   grumphp:
+    service: appserver
     description: Runs grumphp commands
-    cmd:
-      - appserver: cd /app && ./vendor/bin/grumphp
+    cmd: /app/.lando/tooling-grumphp.sh
 
 # Recommended Lando version.
 version: v3.0.0-rrc.2
