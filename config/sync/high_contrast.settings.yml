@@ -4,4 +4,4 @@ colors_background: '#000000'
 colors_text: '#ffffff'
 colors_hyperlinks: '#ffff00'
 default_logo: true
-logo_path: ''
+logo_path: null
