@@ -1,13 +1,13 @@
-uuid: b358a7aa-4e25-453b-bb11-cccfaf21622a
+uuid: fdafe6cd-b78a-40fd-9109-69599dd3a3ce
 langcode: en
 status: true
 dependencies:
   module:
     - high_contrast
   theme:
-    - bartik
+    - olivero
 id: highcontrast
-theme: bartik
+theme: olivero
 region: breadcrumb
 weight: 0
 provider: null

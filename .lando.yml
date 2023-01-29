@@ -1,5 +1,5 @@
 name: d8-high-contrast
-recipe: drupal9
+recipe: drupal10
 config:
   webroot: web
   php: '8.1'
@@ -16,4 +16,4 @@ tooling:
     cmd: /app/.lando/tooling-grumphp.sh
 
 # Recommended Lando version.
-version: v3.6.4
+version: v3.10.0

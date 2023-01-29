@@ -26,3 +26,8 @@ ini_set('memory_limit', '2G');
 
 // Don't harden the files folder locally.
 $settings['skip_permissions_hardening'] = TRUE;
+
+// Set trusted domain to be localhost.
+$settings['trusted_host_patterns'] = [
+  'd8-high-contrast.lndo.site',
+];
